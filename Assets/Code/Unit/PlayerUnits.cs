@@ -7,7 +7,7 @@ namespace TAMKShooter
 {
 	public class PlayerUnits : MonoBehaviour
 	{
-		private Dictionary<PlayerData.PlayerId, PlayerUnit> _players =
+		public Dictionary<PlayerData.PlayerId, PlayerUnit> _players =
 			new Dictionary<PlayerData.PlayerId, PlayerUnit> ();
 
 		public void Init(params PlayerData[] players)
