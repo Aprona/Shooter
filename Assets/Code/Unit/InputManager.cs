@@ -33,29 +33,25 @@ public class InputManager : MonoBehaviour {
             {
                 horizontal = Input.GetAxis("P1 Horizontal");
                 vertical = Input.GetAxis("P1 Vertical");
-                shoot = Input.GetButton("P1 Shoot");
-                //Debug.Log("Player1");                                           
+                shoot = Input.GetButton("P1 Shoot");                                       
             }
             else if (player.Key == PlayerData.PlayerId.Player2)
             {
                 horizontal = Input.GetAxis("P2 Horizontal");
                 vertical = Input.GetAxis("P2 Vertical");
                 shoot = Input.GetButton("P2 Shoot");
-                Debug.Log("Player1");
             }
             else if (player.Key == PlayerData.PlayerId.Player3)
             {
                 horizontal = Input.GetAxis("P3 Horizontal");
                 vertical = Input.GetAxis("P3 Vertical");
                 shoot = Input.GetButton("P3 Shoot");
-                Debug.Log("Player1");
             }
             else if (player.Key == PlayerData.PlayerId.Player4)
             {
                 horizontal = Input.GetAxis("P4 Horizontal");
                 vertical = Input.GetAxis("P4 Vertical");
                 shoot = Input.GetButton("P4 Shoot");
-                Debug.Log("Player1");
             }
 
             input = new Vector3(horizontal, 0, vertical);
